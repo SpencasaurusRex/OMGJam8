@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{   
+{
     public float Speed = 5;
     public float JumpVelocity = 10;
     public Transform Feet;
@@ -15,6 +15,18 @@ public class PlayerController : MonoBehaviour
     int groundMask;
     float lastTouchingGround;
     float lastJump;
+    int stateIndex = Animator.StringToHash("State");
+    
+    bool tryJump;
+    Vector2 targetVel;
+
+    enum AnimState
+    {
+        Idle = 0,
+        Running = 1,
+        Jumping = 2,
+        Falling = 3
+    }
     
     void Start()
     {
@@ -28,7 +40,48 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        int state = 0;
+        AnimState state = AnimState.Idle;
+        
+        targetVel = rb.velocity;
+        targetVel.x = Input.GetAxisRaw("Horizontal") * Speed;
+        
+        if (Mathf.Abs(targetVel.x) > 0)
+        {
+            state = AnimState.Running;
+        }
+        
+        if (targetVel.x > 0) transform.localScale = new Vector3(1, 1, 1);
+        if (targetVel.x < 0) transform.localScale = new Vector3(-1, 1, 1);
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            tryJump = true;
+        }
+
+        if (rb.velocity.y < -0.05f)
+        {
+            state = AnimState.Falling;
+        }
+
+        if (rb.velocity.y > 0.05f)
+        {
+            state = AnimState.Jumping;
+        }
+        
+        anim.SetInteger(stateIndex, (int)state);
+    }
+
+    float lastHeight;
+    bool shownThisJump;
+    
+    void FixedUpdate()
+    {
+        if (lastHeight > transform.position.y && !shownThisJump)
+        {
+            print(lastHeight);
+            shownThisJump = true;
+        }
+        lastHeight = transform.position.y;
         
         grounded = Physics2D.OverlapBoxNonAlloc(Feet.position, Vector2.one * 0.05f, 0, groundDetection, groundMask) > 0;
         if (grounded)
@@ -37,41 +90,28 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            lastTouchingGround += Time.deltaTime;
+            lastTouchingGround += Time.fixedDeltaTime;
         }
         
-        var targetVel = rb.velocity;
-        targetVel.x = Input.GetAxisRaw("Horizontal") * Speed;
-
-        if (Mathf.Abs(targetVel.x) > 0)
+        if (lastTouchingGround <= CoyoteTime && tryJump)
         {
-            state = 1;
-            print(state);
-        }
-        
-        if (targetVel.x > 0) transform.localScale = new Vector3(1, 1, 1);
-        if (targetVel.x < 0) transform.localScale = new Vector3(-1, 1, 1);
-        
-        if (lastTouchingGround <= CoyoteTime && Input.GetKey(KeyCode.Space))
-        {
+            shownThisJump = false;
             lastTouchingGround += CoyoteTime + 0.01f; // Disqualify us from jumping next frame
             targetVel.y = JumpVelocity;
         }
         
-        if (targetVel.y < -0.05f)
-        {
-            rb.gravityScale = gravity * 1.5f;
-            state = 3;
-        }
-        if (targetVel.y > 0.05f)
+        if (targetVel.y > 0.05f && tryJump)
         {
             rb.gravityScale = gravity;
-            state = 2;
+        }
+        else
+        {
+            rb.gravityScale = gravity * 2f;
         }
         
+        tryJump = false;
+        
         rb.velocity = targetVel;
-
-        anim.SetInteger("State", state);
     }
 
     void OnDrawGizmosSelected()

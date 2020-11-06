@@ -4471,7 +4471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  JumpVelocity: 10
+  JumpVelocity: 13
   Feet: {fileID: 1761390800}
   CoyoteTime: 0.25
 --- !u!50 &1744094836
