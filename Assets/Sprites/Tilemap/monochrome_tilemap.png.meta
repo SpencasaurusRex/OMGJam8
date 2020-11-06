@@ -784,22 +784,22 @@ TextureImporter:
     second: monochrome_tilemap_259
   - first:
       213: 8668245384196622081
-    second: monochrome_tilemap_260
+    second: player_idle
   - first:
       213: 4855126778798523472
-    second: monochrome_tilemap_261
+    second: player_run_0
   - first:
       213: -2699553564279677144
-    second: monochrome_tilemap_262
+    second: player_run_1
   - first:
       213: -8700237232312932041
-    second: monochrome_tilemap_263
+    second: player_run_2
   - first:
       213: -4971782864601827304
-    second: monochrome_tilemap_264
+    second: player_jump
   - first:
       213: -3699494920969168056
-    second: monochrome_tilemap_265
+    second: player_fall
   - first:
       213: -1542070456935879973
     second: monochrome_tilemap_266
@@ -9676,7 +9676,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_260
+      name: player_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -9697,7 +9697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_261
+      name: player_run_0
       rect:
         serializedVersion: 2
         x: 17
@@ -9718,7 +9718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_262
+      name: player_run_1
       rect:
         serializedVersion: 2
         x: 34
@@ -9739,7 +9739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_263
+      name: player_run_2
       rect:
         serializedVersion: 2
         x: 51
@@ -9760,7 +9760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_264
+      name: player_jump
       rect:
         serializedVersion: 2
         x: 68
@@ -9781,7 +9781,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_265
+      name: player_fall
       rect:
         serializedVersion: 2
         x: 85
