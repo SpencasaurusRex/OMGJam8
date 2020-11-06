@@ -6,7 +6,7 @@ public class RespawnMushroom : MonoBehaviour
 {
     public GameObject Mask;
 
-    public float WaitTime = 0.5f;
+    public float WaitTime = 1f;
     float timeWaited;
     
     public void Respawn()
