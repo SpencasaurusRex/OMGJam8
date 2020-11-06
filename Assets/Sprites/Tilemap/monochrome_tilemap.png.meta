@@ -166,7 +166,7 @@ TextureImporter:
     second: monochrome_tilemap_53
   - first:
       213: 1514300100640665706
-    second: monochrome_tilemap_54
+    second: mushroom
   - first:
       213: 908996241645781179
     second: monochrome_tilemap_55
@@ -556,13 +556,13 @@ TextureImporter:
     second: monochrome_tilemap_183
   - first:
       213: 6547091381790543920
-    second: monochrome_tilemap_184
+    second: arrow_left
   - first:
       213: -3422912737277806526
     second: monochrome_tilemap_185
   - first:
       213: -7092334851845792427
-    second: monochrome_tilemap_186
+    second: arrow_right
   - first:
       213: 757896751874026613
     second: monochrome_tilemap_187
@@ -5350,7 +5350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_54
+      name: mushroom
       rect:
         serializedVersion: 2
         x: 238
@@ -8070,7 +8070,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: -2}
+        - {x: -5, y: 1}
+        - {x: 5, y: 1}
+        - {x: 8, y: -2}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: 892f1ddde28fe67f0800000000000000
@@ -8080,7 +8086,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_184
+      name: arrow_left
       rect:
         serializedVersion: 2
         x: 68
@@ -8122,7 +8128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_186
+      name: arrow_right
       rect:
         serializedVersion: 2
         x: 102

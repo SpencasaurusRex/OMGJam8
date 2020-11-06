@@ -6,13 +6,18 @@ public class PlayerController : MonoBehaviour
     public float JumpVelocity = 10;
     public Transform Feet;
     public float CoyoteTime = 0.2f;
+    public Vector2 RespawnVelocity;
+    public float RespawnControlLockTime = 0.5f;
+    
+    RespawnMushroom lastMushroom;
     
     Animator anim;
     float gravity;
     Rigidbody2D rb;
     bool grounded;
-    Collider2D[] groundDetection;
+    Collider2D[] detectionResults;
     int groundMask;
+    int mushroomMask;
     float lastTouchingGround;
     float lastJump;
     int stateIndex = Animator.StringToHash("State");
@@ -20,6 +25,8 @@ public class PlayerController : MonoBehaviour
     bool tryJump;
     Vector2 targetVel;
 
+    float timeSinceRespawn;
+    
     enum AnimState
     {
         Idle = 0,
@@ -33,31 +40,37 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         
-        groundDetection = new Collider2D[4];
+        detectionResults = new Collider2D[4];
         groundMask = LayerMask.GetMask("Ground");
+        mushroomMask = LayerMask.GetMask("Mushroom");
         gravity = rb.gravityScale;
     }
 
     void Update()
     {
+        timeSinceRespawn += Time.deltaTime;
+        targetVel = rb.velocity;
+        
+        if (timeSinceRespawn > RespawnControlLockTime)
+        {
+            targetVel.x = Input.GetAxisRaw("Horizontal") * Speed;
+            
+            if (Input.GetKey(KeyCode.Space))
+            {
+                tryJump = true;
+            }
+        }
+        
         AnimState state = AnimState.Idle;
         
-        targetVel = rb.velocity;
-        targetVel.x = Input.GetAxisRaw("Horizontal") * Speed;
-        
-        if (Mathf.Abs(targetVel.x) > 0)
+        if (Mathf.Abs(rb.velocity.x) > 0.1f)
         {
             state = AnimState.Running;
         }
         
-        if (targetVel.x > 0) transform.localScale = new Vector3(1, 1, 1);
-        if (targetVel.x < 0) transform.localScale = new Vector3(-1, 1, 1);
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            tryJump = true;
-        }
-
+        if (rb.velocity.x > 0) transform.localScale = new Vector3(1, 1, 1);
+        if (rb.velocity.x < 0) transform.localScale = new Vector3(-1, 1, 1);
+        
         if (rb.velocity.y < -0.05f)
         {
             state = AnimState.Falling;
@@ -69,21 +82,19 @@ public class PlayerController : MonoBehaviour
         }
         
         anim.SetInteger(stateIndex, (int)state);
+        
+
     }
 
-    float lastHeight;
-    bool shownThisJump;
-    
     void FixedUpdate()
     {
-        if (lastHeight > transform.position.y && !shownThisJump)
+        if (Physics2D.OverlapBoxNonAlloc(transform.position, Vector2.one * 0.5f, 0, detectionResults, mushroomMask) > 0)
         {
-            print(lastHeight);
-            shownThisJump = true;
+            lastMushroom = detectionResults[0].GetComponent<RespawnMushroom>();
+            print("Respawn point saved");
         }
-        lastHeight = transform.position.y;
         
-        grounded = Physics2D.OverlapBoxNonAlloc(Feet.position, Vector2.one * 0.05f, 0, groundDetection, groundMask) > 0;
+        grounded = Physics2D.OverlapBoxNonAlloc(Feet.position, Vector2.one * 0.05f, 0, detectionResults, groundMask) > 0;
         if (grounded)
         {
             lastTouchingGround = 0;
@@ -95,7 +106,6 @@ public class PlayerController : MonoBehaviour
         
         if (lastTouchingGround <= CoyoteTime && tryJump)
         {
-            shownThisJump = false;
             lastTouchingGround += CoyoteTime + 0.01f; // Disqualify us from jumping next frame
             targetVel.y = JumpVelocity;
         }
@@ -112,6 +122,23 @@ public class PlayerController : MonoBehaviour
         tryJump = false;
         
         rb.velocity = targetVel;
+    }
+
+    public void Die()
+    {
+        // TODO: Screen fadeout animation
+        
+        // Teleport to mushroom
+        var tfp = lastMushroom.transform.position;
+        var mushroomPosition = new Vector3(tfp.x, tfp.y, transform.position.z);
+        transform.position = mushroomPosition;
+        
+        timeSinceRespawn = 0;
+        
+        lastMushroom.Respawn();
+        
+        // Apply force to player
+        rb.velocity = RespawnVelocity;
     }
 
     void OnDrawGizmosSelected()
