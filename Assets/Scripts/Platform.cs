@@ -20,7 +20,7 @@ public class Platform : MonoBehaviour
     Vector2 pos;
     
     int playerMask;
-    Collider2D collider;
+    Collider2D coll;
 
     Sprite GetSprite(int i)
     {
@@ -81,7 +81,7 @@ public class Platform : MonoBehaviour
     void Start()
     {
         playerMask = LayerMask.GetMask("Player");
-        collider = GetComponent<Collider2D>();
+        coll = GetComponent<Collider2D>();
 
         
         children = new SpriteRenderer[MaxSize];
@@ -98,7 +98,7 @@ public class Platform : MonoBehaviour
     {
         collapsed = collapsing = false;
         timeSinceCollapse = 0;
-        collider.enabled = true;
+        coll.enabled = true;
         for (int i = 0; i < Size; i++)
         {
             children[i].enabled = true;
@@ -132,10 +132,11 @@ public class Platform : MonoBehaviour
                 float t = (timeSinceCollapse - CollapseTime);
                 float y = collapsed ? -t * t * 15 : 0;
                 var pos = new Vector2(-(Size - 1) * 0.5f + i, y);
-                pos += new Vector2(
-                    Mathf.Cos(2 * JitterSpeed * Time.time), 
-                    Mathf.Sin(JitterSpeed * Time.time)
-                ) * JitterAmount;
+                if (!collapsed)
+                    pos += new Vector2(
+                        Mathf.Cos(2 * JitterSpeed * Time.time), 
+                        Mathf.Sin(JitterSpeed * Time.time)
+                    ) * JitterAmount;
                 
                 children[i].gameObject.transform.localPosition = pos;
             }
@@ -144,7 +145,7 @@ public class Platform : MonoBehaviour
             if (timeSinceCollapse >= CollapseTime)
             {
                 collapsed = true;
-                collider.enabled = false;
+                coll.enabled = false;
                 for (int i = 0; i < Size; i++)
                 {
                     // children[i].enabled = false;

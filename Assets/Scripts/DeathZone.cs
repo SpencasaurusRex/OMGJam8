@@ -23,7 +23,7 @@ public class DeathZone : MonoBehaviour
 
         if (Physics2D.OverlapBoxNonAlloc(center, size, 0, colliderResults, mask) > 0)
         {
-            colliderResults[0].GetComponent<PlayerController>().Die();
+            colliderResults[0].GetComponent<PlayerController>().Die(false);
         }
     }
 

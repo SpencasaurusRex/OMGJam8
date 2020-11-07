@@ -802,7 +802,7 @@ TextureImporter:
     second: player_fall
   - first:
       213: -1542070456935879973
-    second: monochrome_tilemap_266
+    second: player_dead
   - first:
       213: 6709240924187113964
     second: monochrome_tilemap_267
@@ -9808,7 +9808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_266
+      name: player_dead
       rect:
         serializedVersion: 2
         x: 102

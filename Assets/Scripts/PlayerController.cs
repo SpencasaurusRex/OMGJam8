@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -25,7 +26,7 @@ public class PlayerController : MonoBehaviour
     float lastTouchingGround;
     float lastJump;
     int stateIndex = Animator.StringToHash("State");
-    Collider2D collider;
+    Collider2D coll;
     
     bool tryJump;
     Vector2 targetVel;
@@ -37,14 +38,15 @@ public class PlayerController : MonoBehaviour
         Idle = 0,
         Running = 1,
         Jumping = 2,
-        Falling = 3
+        Falling = 3,
+        Dead = 4
     }
     
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
+        coll = GetComponent<BoxCollider2D>();
         
         detectionResults = new Collider2D[4];
         groundMask = LayerMask.GetMask("Ground");
@@ -72,6 +74,7 @@ public class PlayerController : MonoBehaviour
             lastMushroom.Respawn();
         
             GameController.instance.StartFadeIn(GameController.FadeContext.Respawn);
+            anim.SetInteger(stateIndex, (int)AnimState.Idle);
         }
     }
 
@@ -127,8 +130,11 @@ public class PlayerController : MonoBehaviour
         {
             state = AnimState.Jumping;
         }
-        
-        anim.SetInteger(stateIndex, (int)state);
+
+        if (anim.GetInteger(stateIndex) != (int) AnimState.Dead)
+        {
+            anim.SetInteger(stateIndex, (int)state);
+        }
     }
 
     void FixedUpdate()
@@ -168,10 +174,21 @@ public class PlayerController : MonoBehaviour
         rb.velocity = targetVel;
     }
 
-    public void Die()
+    public void Bounce(float amount)
+    {
+        rb.velocity = new Vector2(rb.velocity.x, amount);
+    }
+
+    public void Die(bool animate)
     {
         if (!alive) return;
         alive = false;
+
+        if (animate)
+        {
+            anim.SetInteger(stateIndex, (int)AnimState.Dead);
+        }
+            
         GameController.instance.StartFadeOut(GameController.FadeContext.Respawn);
         controlsLocked = true;
         

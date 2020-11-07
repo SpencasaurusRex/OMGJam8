@@ -6,32 +6,18 @@ public class Sign : MonoBehaviour
     public RectTransform Canvas;
     public float TargetScale = 0.01f;
     public float AnimDuration = 0.4f;
-    
-    int playerMask;
-    
-    void Start()
-    {
-        playerMask = LayerMask.GetMask("Player");
-    }
-
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //if ((other.gameObject.layer & playerMask) > 0)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            print("In");
-
-            DOTween.To(() => Canvas.localScale.x, (float x) =>
+            DOTween.To(() => Canvas.localScale.x, x =>
             {
                 var ls = Canvas.localScale;
                 ls.x = x;
                 Canvas.localScale = ls;
             }, TargetScale, AnimDuration).SetEase(Ease.OutBack);
-            DOTween.To(() => Canvas.localScale.y, (float y) =>
+            DOTween.To(() => Canvas.localScale.y, y =>
             {
                 var ls = Canvas.localScale;
                 ls.y = y;
@@ -42,16 +28,15 @@ public class Sign : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        print("Out");
-        //if ((other.gameObject.layer & playerMask) > 0)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            DOTween.To(() => Canvas.localScale.x, (float x) =>
+            DOTween.To(() => Canvas.localScale.x, x =>
             {
                 var ls = Canvas.localScale;
                 ls.x = x;
                 Canvas.localScale = ls;
             }, 0, AnimDuration).SetEase(Ease.InQuad);
-            DOTween.To(() => Canvas.localScale.y, (float y) =>
+            DOTween.To(() => Canvas.localScale.y, y =>
             {
                 var ls = Canvas.localScale;
                 ls.y = y;
