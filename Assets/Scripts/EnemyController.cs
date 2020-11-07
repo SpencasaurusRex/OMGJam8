@@ -11,6 +11,8 @@ public class EnemyController : MonoBehaviour
         Die = 1
     }
     
+    public OneShotSound DieSound;
+    
     Vector2 initialPosition; 
     Collider2D coll;
     
@@ -68,6 +70,8 @@ public class EnemyController : MonoBehaviour
         Speed = 0;
         dead = true;
         fadeTween = sr.DOFade(0, 1f).SetEase(Ease.InCubic);
+        
+        Instantiate(DieSound, transform);
     }
     
     public void Respawn()

@@ -4,14 +4,10 @@ public class RespawnMushroom : MonoBehaviour
 {
     public GameObject Mask;
     public float WaitTime = 1f;
+    public OneShotSound PopSound;
+    public OneShotSound MarkSound;
     
-    AudioSource source;
     float timeWaited;
-
-    void Start()
-    {
-        source = GetComponent<AudioSource>();
-    }
 
     public void Respawn()
     {
@@ -21,7 +17,13 @@ public class RespawnMushroom : MonoBehaviour
 
     public void Pop()
     {
-        source.PlayOneShot(source.clip);
+        Instantiate(PopSound, transform);
+    }
+
+    public void Mark()
+    {
+        print("Mark");
+        Instantiate(MarkSound, transform);
     }
 
     void Update()

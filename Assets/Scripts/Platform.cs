@@ -146,10 +146,6 @@ public class Platform : MonoBehaviour
             {
                 collapsed = true;
                 coll.enabled = false;
-                for (int i = 0; i < Size; i++)
-                {
-                    // children[i].enabled = false;
-                }
             }
         }
         else transform.position = pos;

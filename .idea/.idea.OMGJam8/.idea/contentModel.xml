@@ -7,6 +7,7 @@
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
             <e p="Modules" t="Include">
+              <e p="DOTween.Modules.asmdef" t="Include" />
               <e p="DOTweenModuleAudio.cs" t="Include" />
               <e p="DOTweenModulePhysics.cs" t="Include" />
               <e p="DOTweenModulePhysics2D.cs" t="Include" />
@@ -21,9 +22,11 @@
         <e p="Scripts" t="Include">
           <e p="AnimateSound.cs" t="Include" />
           <e p="DeathZone.cs" t="Include" />
+          <e p="Door.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="LightIntensityFluctuate.cs" t="Include" />
+          <e p="OneShotSound.cs" t="Include" />
           <e p="Platform.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="RespawnMushroom.cs" t="Include" />
@@ -64,6 +67,7 @@
           </e>
         </e>
       </e>
+      <e p="DOTween.Modules.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="OMGJam8.sln" t="IncludeFlat" />
       <e p="Packages" t="ExcludeRecursive" />

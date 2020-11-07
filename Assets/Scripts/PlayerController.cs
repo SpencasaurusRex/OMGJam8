@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     
     bool alive = true;
     
-    RespawnMushroom lastMushroom;
+    public RespawnMushroom LastMushroom;
     
     Animator anim;
     float gravity;
@@ -55,6 +55,8 @@ public class PlayerController : MonoBehaviour
         
         GameController.OnFadeoutComplete += FadeOutComplete;
         GameController.OnFadeIncomplete += FadeInComplete;
+        
+        LastMushroom.Respawn();
     }
 
     void FadeOutComplete(GameController.FadeContext context)
@@ -64,14 +66,14 @@ public class PlayerController : MonoBehaviour
             alive = true;
             
             // Teleport to mushroom
-            var tfp = lastMushroom.transform.position;
+            var tfp = LastMushroom.transform.position;
             var mushroomPosition = new Vector3(tfp.x, tfp.y, transform.position.z);
             transform.position = mushroomPosition;
             
             controlsLocked = true;
             targetVel = rb.velocity = Vector2.zero;
 
-            lastMushroom.Respawn();
+            LastMushroom.Respawn();
         
             GameController.instance.StartFadeIn(GameController.FadeContext.Respawn);
             anim.SetInteger(stateIndex, (int)AnimState.Idle);
@@ -80,15 +82,12 @@ public class PlayerController : MonoBehaviour
 
     void FadeInComplete(GameController.FadeContext context)
     {
-        if (context == GameController.FadeContext.Respawn)
-        {
-            lastMushroom.Pop();
-            controlsLocked = true;
+        LastMushroom.Pop();
+        controlsLocked = true;
             
-            // Apply force to player
-            targetVel = rb.velocity = RespawnVelocity;
-            StartCoroutine(UnlockControls());
-        }
+        // Apply force to player
+        targetVel = rb.velocity = RespawnVelocity;
+        StartCoroutine(UnlockControls());
     }
 
     IEnumerator UnlockControls()
@@ -135,13 +134,34 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetInteger(stateIndex, (int)state);
         }
+
+        if (Input.GetKey(KeyCode.E) && lastDoor != null)
+        {
+            sceneLoad = lastDoor.SceneBuildIndex;
+            GameController.instance.StartFadeOut(GameController.FadeContext.LevelChange);
+            GameController.OnFadeoutComplete += LoadScene;
+        }
     }
 
+    int sceneLoad;
+    
+    void LoadScene(GameController.FadeContext context)
+    {
+        if (context != GameController.FadeContext.LevelChange) return;
+        SceneManager.LoadScene(sceneLoad);
+        GameController.OnFadeoutComplete -= LoadScene;
+    }
+    
     void FixedUpdate()
     {
         if (Physics2D.OverlapBoxNonAlloc(transform.position, Vector2.one * 0.5f, 0, detectionResults, mushroomMask) > 0)
         {
-            lastMushroom = detectionResults[0].GetComponent<RespawnMushroom>();
+            var lm = detectionResults[0].GetComponent<RespawnMushroom>();
+            if (lm != LastMushroom)
+            {
+                LastMushroom = lm;
+                lm.Mark();
+            }
         }
         
         grounded = Physics2D.OverlapBoxNonAlloc(Feet.position, Vector2.one * 0.05f, 0, detectionResults, groundMask) > 0;
@@ -202,5 +222,23 @@ public class PlayerController : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.DrawCube(Feet.position, Vector3.one * 0.1f);
+    }
+
+    Door lastDoor;
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Door"))
+        {
+            lastDoor = other.gameObject.GetComponent<Door>();
+        }
+    }
+    
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Door"))
+        {
+            lastDoor = null;
+        }
     }
 }

@@ -175,13 +175,13 @@ TextureImporter:
     second: monochrome_tilemap_56
   - first:
       213: -3793015837535012933
-    second: monochrome_tilemap_57
+    second: locked_door
   - first:
       213: 5416662588262627885
-    second: monochrome_tilemap_58
+    second: open_door
   - first:
       213: -5263108609968989893
-    second: monochrome_tilemap_59
+    second: level_door
   - first:
       213: 4514959840514773606
     second: monochrome_tilemap_60
@@ -4173,7 +4173,7 @@ TextureImporter:
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -4185,7 +4185,7 @@ TextureImporter:
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -4197,7 +4197,7 @@ TextureImporter:
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -5413,7 +5413,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_57
+      name: locked_door
       rect:
         serializedVersion: 2
         x: 289
@@ -5434,7 +5434,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_58
+      name: open_door
       rect:
         serializedVersion: 2
         x: 306
@@ -5455,7 +5455,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monochrome_tilemap_59
+      name: level_door
       rect:
         serializedVersion: 2
         x: 323

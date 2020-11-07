@@ -20,29 +20,18 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings:
-    - serializedVersion: 3
-      m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 512
-      m_ResizeAlgorithm: 0
-      m_TextureFormat: -1
-      m_TextureCompression: 1
-      m_CompressionQuality: 50
-      m_CrunchedCompression: 0
-      m_AllowsAlphaSplitting: 0
-      m_Overridden: 0
-      m_AndroidETC2FallbackOverride: 0
-      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    platformSettings: []
     packingSettings:
       serializedVersion: 2
       padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 0
+      enableRotation: 1
       enableTightPacking: 1
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
+    totalSpriteSurfaceArea: 102400
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -88,7 +77,6 @@ SpriteAtlas:
   - {fileID: -3014214146221616415, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -884822439804151200, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 9083600936738512586, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
-  - {fileID: -3793015837535012933, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -149980142497669804, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 6664084894587361451, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 4486128040662440882, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
@@ -106,8 +94,10 @@ SpriteAtlas:
   - {fileID: 3042791371994342405, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -3637843168402878751, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -3187778473670210413, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
+  - {fileID: 5416662588262627885, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 6547091381790543920, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -4971782864601827304, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
+  - {fileID: -3793015837535012933, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 2090443210282043991, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 8668245384196622081, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -7411195549730748137, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
@@ -150,6 +140,7 @@ SpriteAtlas:
   - {fileID: -3059728795821101802, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 4347663842926943401, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: -5753772637862568407, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
+  - {fileID: -5263108609968989893, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 3944546589737459308, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 5531506953056567750, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 5195863797132445591, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
@@ -441,10 +432,8 @@ SpriteAtlas:
   - {fileID: -7307494328612587799, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 1213353574344611758, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 1326457918330764909, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
-  - {fileID: -5263108609968989893, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 2518204505116282650, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 319784503912191879, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
-  - {fileID: 5416662588262627885, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 103587126542709962, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 921243628661087464, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
   - {fileID: 804464584299448833, guid: 2e3a3cbd55ac7354088e9dde9e8b338c, type: 3}
@@ -489,7 +478,6 @@ SpriteAtlas:
   - monochrome_tilemap_38
   - monochrome_tilemap_225
   - monochrome_tilemap_231
-  - monochrome_tilemap_57
   - monochrome_tilemap_27
   - monochrome_tilemap_37
   - monochrome_tilemap_230
@@ -507,8 +495,10 @@ SpriteAtlas:
   - monochrome_tilemap_32
   - monochrome_tilemap_31
   - monochrome_tilemap_30
+  - open_door
   - arrow_left
   - player_jump
+  - locked_door
   - monochrome_tilemap_176
   - player_idle
   - monochrome_tilemap_177
@@ -551,6 +541,7 @@ SpriteAtlas:
   - monochrome_tilemap_102
   - monochrome_tilemap_101
   - monochrome_tilemap_100
+  - level_door
   - monochrome_tilemap_378
   - monochrome_tilemap_379
   - monochrome_tilemap_369
@@ -842,10 +833,8 @@ SpriteAtlas:
   - monochrome_tilemap_214
   - monochrome_tilemap_203
   - monochrome_tilemap_213
-  - monochrome_tilemap_59
   - monochrome_tilemap_212
   - monochrome_tilemap_228
-  - monochrome_tilemap_58
   - monochrome_tilemap_211
   - monochrome_tilemap_229
   - monochrome_tilemap_210

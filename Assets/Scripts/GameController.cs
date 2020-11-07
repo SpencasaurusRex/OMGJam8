@@ -18,8 +18,8 @@ public class GameController : MonoBehaviour
 
     public delegate void FadeInComplete(FadeContext context);
     public static event FadeInComplete OnFadeIncomplete;
-    
-    
+
+
     public enum FadeContext
     {
         Respawn,
@@ -36,6 +36,16 @@ public class GameController : MonoBehaviour
     void Start()
     {
         StartFadeIn(FadeContext.LevelChange);
+        Screen.fullScreen = false;
+        //Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void StartFadeOut(FadeContext context)
