@@ -56,7 +56,7 @@ public class Sign : MonoBehaviour
                 var ls = Canvas.localScale;
                 ls.y = y;
                 Canvas.localScale = ls;
-            }, 0, AnimDuration-0.1f).SetEase(Ease.InQuad);
+            }, 0, AnimDuration).SetEase(Ease.InQuad);
         }        
     }
 }

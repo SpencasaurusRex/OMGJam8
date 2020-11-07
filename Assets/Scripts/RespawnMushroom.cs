@@ -5,14 +5,25 @@ using UnityEngine;
 public class RespawnMushroom : MonoBehaviour
 {
     public GameObject Mask;
-
     public float WaitTime = 1f;
-    float timeWaited;
     
+    AudioSource source;
+    float timeWaited;
+
+    void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
     public void Respawn()
     {
         timeWaited = 0;
         Mask.SetActive(true);
+    }
+
+    public void Pop()
+    {
+        source.PlayOneShot(source.clip);
     }
 
     void Update()

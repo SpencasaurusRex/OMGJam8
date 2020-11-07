@@ -1,9 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
-using Vector2 = UnityEngine.Vector2;
-using Vector3 = UnityEngine.Vector3;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float CoyoteTime = 0.2f;
     public Vector2 RespawnVelocity;
     public float RespawnControlLockTime = 0.5f;
+    public Transform Target;
     
     bool alive = true;
     
@@ -82,6 +79,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context == GameController.FadeContext.Respawn)
         {
+            lastMushroom.Pop();
             controlsLocked = true;
             
             // Apply force to player

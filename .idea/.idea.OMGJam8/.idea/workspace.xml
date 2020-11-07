@@ -20,98 +20,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e34a3ba-f593-43a2-a98a-3a111dc060e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/DOTween.XML" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/DOTween.XML.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/DOTween.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/DOTween.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/DOTweenEditor.XML" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/DOTweenEditor.XML.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/DOTweenIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/DOTweenIcon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/Footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/Footer.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/Footer_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/Footer_dark.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/Header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Editor/Imgs/Header.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demigiant/DOTween/readme.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimateSound.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimateSound.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sign.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/step3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/step3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/UI_Border.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/UI_Border.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI_Border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI_Border.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlatformChild.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlatformChild.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Constant Synth Wind.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Constant Synth Wind.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Pop.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Pop.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/Target.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/Target.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Target.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Target.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_center_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_center_0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_center_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_center_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_left_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_left_0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_left_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_right_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_right_0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_right_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_single_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_single_0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_single_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/collapse_single_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_center.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_center.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_left.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_right.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_single.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/platform_single.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerRun.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerRun.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RespawnMushroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RespawnMushroom.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0077.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0077.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sign.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sign.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/step6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/step6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CircleMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CircleMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/monochrome_tilemap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/monochrome_tilemap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0063.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0063.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0064.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0065.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0066.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0066.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0083.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0083.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0084.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0084.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0085.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0085.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0086.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0086.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0143.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0144.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0145.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tiles/Transparent/tile_0146.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,15 +105,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sign.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimateSound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/81986B7D-E77F-470C-8157-A969000B3A00/b4/945e5ac8/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/6e/5df79775/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightIntensityFluctuate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -139,11 +124,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightIntensityFluctuate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InvertedMaskImage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimateSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Platform.cs" />
       </list>
     </option>
   </component>
@@ -164,17 +150,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="32932">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" value="32932" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="93456">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="93456" />
       <method v="2" />
     </configuration>
   </component>
@@ -185,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604648536318</updated>
-      <workItem from="1604648540283" duration="27883000" />
+      <workItem from="1604648540283" duration="39111000" />
     </task>
     <servers />
   </component>
@@ -207,81 +193,109 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="499" height="580" key="DebuggerActiveHint" timestamp="1604651831813">
+    <state width="499" height="580" key="DebuggerActiveHint" timestamp="1604746360437">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="499" height="580" key="DebuggerActiveHint/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651831813" />
-    <state width="2488" height="506" key="GridCell.Tab.0.bottom" timestamp="1604651805631">
+    <state width="499" height="580" key="DebuggerActiveHint/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746360437" />
+    <state width="2505" height="114" key="GridCell.Tab.0.bottom" timestamp="1604746330818">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.0.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805631" />
-    <state width="2488" height="506" key="GridCell.Tab.0.center" timestamp="1604651805631">
+    <state width="2505" height="114" key="GridCell.Tab.0.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330818" />
+    <state width="2505" height="114" key="GridCell.Tab.0.center" timestamp="1604746330818">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.0.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805631" />
-    <state width="2488" height="506" key="GridCell.Tab.0.left" timestamp="1604651805631">
+    <state width="2505" height="114" key="GridCell.Tab.0.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330818" />
+    <state width="2505" height="114" key="GridCell.Tab.0.left" timestamp="1604746330818">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.0.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805631" />
-    <state width="2488" height="506" key="GridCell.Tab.0.right" timestamp="1604651805631">
+    <state width="2505" height="114" key="GridCell.Tab.0.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330818" />
+    <state width="2505" height="114" key="GridCell.Tab.0.right" timestamp="1604746330818">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.0.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805631" />
-    <state width="2488" height="506" key="GridCell.Tab.1.bottom" timestamp="1604651809453">
+    <state width="2505" height="114" key="GridCell.Tab.0.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330818" />
+    <state width="2505" height="114" key="GridCell.Tab.1.bottom" timestamp="1604746345543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.1.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651809453" />
-    <state width="2488" height="506" key="GridCell.Tab.1.center" timestamp="1604651809453">
+    <state width="2505" height="114" key="GridCell.Tab.1.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746345543" />
+    <state width="2505" height="114" key="GridCell.Tab.1.center" timestamp="1604746345543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.1.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651809453" />
-    <state width="2488" height="506" key="GridCell.Tab.1.left" timestamp="1604651809453">
+    <state width="2505" height="114" key="GridCell.Tab.1.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746345543" />
+    <state width="2505" height="114" key="GridCell.Tab.1.left" timestamp="1604746345543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.1.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651809453" />
-    <state width="2488" height="506" key="GridCell.Tab.1.right" timestamp="1604651809453">
+    <state width="2505" height="114" key="GridCell.Tab.1.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746345543" />
+    <state width="2505" height="114" key="GridCell.Tab.1.right" timestamp="1604746345543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.1.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651809453" />
-    <state width="2488" height="506" key="GridCell.Tab.2.bottom" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.1.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746345543" />
+    <state width="2505" height="114" key="GridCell.Tab.2.bottom" timestamp="1604746330718">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.2.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.2.center" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.2.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330718" />
+    <state width="2505" height="114" key="GridCell.Tab.2.center" timestamp="1604746330717">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.2.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.2.left" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.2.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330717" />
+    <state width="2505" height="114" key="GridCell.Tab.2.left" timestamp="1604746330717">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.2.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.2.right" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.2.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330717" />
+    <state width="2505" height="114" key="GridCell.Tab.2.right" timestamp="1604746330718">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.2.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.3.bottom" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.2.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330718" />
+    <state width="2505" height="114" key="GridCell.Tab.3.bottom" timestamp="1604746330718">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.3.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.3.center" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.3.bottom/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330718" />
+    <state width="2505" height="114" key="GridCell.Tab.3.center" timestamp="1604746330718">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.3.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.3.left" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.3.center/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330718" />
+    <state width="2505" height="114" key="GridCell.Tab.3.left" timestamp="1604746330718">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.3.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="2488" height="506" key="GridCell.Tab.3.right" timestamp="1604651805503">
+    <state width="2505" height="114" key="GridCell.Tab.3.left/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330718" />
+    <state width="2505" height="114" key="GridCell.Tab.3.right" timestamp="1604746330718">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2488" height="506" key="GridCell.Tab.3.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604651805503" />
-    <state width="623" height="515" key="SwitcherDM" timestamp="1604687633677">
+    <state width="2505" height="114" key="GridCell.Tab.3.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604746330718" />
+    <state width="623" height="515" key="SwitcherDM" timestamp="1604749045334">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="623" height="515" key="SwitcherDM/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604687633677" />
+    <state width="623" height="515" key="SwitcherDM/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604749045334" />
+    <state x="423" y="34" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604703113570">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="423" y="34" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604703113570" />
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1604685125324">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604685125324" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Platform.cs</url>
+          <line>49</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" initialLine="26">
+            <startOffsets>
+              <option value="1025" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1076" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="children[i]" language="C#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
