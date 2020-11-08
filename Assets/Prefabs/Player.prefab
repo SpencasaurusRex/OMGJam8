@@ -87,7 +87,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cadbafa5575b5e94f81b3f6b40f173ba, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,6 +156,12 @@ MonoBehaviour:
   CoyoteTime: 0.25
   RespawnVelocity: {x: 4, y: 16}
   RespawnControlLockTime: 0.5
+  Target: {fileID: 0}
+  JumpSound: {fileID: 4402314574776852207, guid: dcf114722ea09bc45aacb38061aedb78, type: 3}
+  LandingSound: {fileID: 4402314574776852207, guid: ee3280795e26ad540a5fa0b56b315c4d, type: 3}
+  Acceleration: 12
+  MaxSpeed: 6
+  LastMushroom: {fileID: 0}
 --- !u!50 &8650524397866288491
 Rigidbody2D:
   serializedVersion: 4
@@ -173,7 +179,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: ec75a921344a63540b801477aa0a5e14, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -311,5 +317,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01480ee8bbb6481da2c7ca80af761769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clip: {fileID: 8300000, guid: deaf819e47b76e34c95b0795c06c7fb7, type: 3}
-  Volume: 0.5
+  Clip: {fileID: 8300000, guid: a3c1df2515a72684fbf5bb7d93c1244c, type: 3}
+  Volume: 0.25

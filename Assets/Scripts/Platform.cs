@@ -90,8 +90,18 @@ public class Platform : MonoBehaviour
             children[i] = transform.GetChild(i).GetComponent<SpriteRenderer>();
         }
         
-        GameController.OnFadeoutComplete += context => Respawn();
+        GameController.OnFadeoutComplete += FadeOut;
         pos = transform.position;
+    }
+
+    void FadeOut(GameController.FadeContext context)
+    {
+        Respawn();
+    }
+    
+    void OnDestroy()
+    {
+        GameController.OnFadeoutComplete -= FadeOut;
     }
 
     void Respawn()

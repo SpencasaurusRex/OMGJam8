@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     public static event FadeOutComplete OnFadeoutComplete;
 
     public delegate void FadeInComplete(FadeContext context);
-    public static event FadeInComplete OnFadeIncomplete;
+    public static event FadeInComplete OnFadeInComplete;
 
 
     public enum FadeContext
@@ -66,6 +66,7 @@ public class GameController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         OnFadeoutComplete?.Invoke(context);
+
         yield return null;
     }
 
@@ -88,7 +89,7 @@ public class GameController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        OnFadeIncomplete?.Invoke(context);
+        OnFadeInComplete?.Invoke(context);
         yield return null;
     }
     

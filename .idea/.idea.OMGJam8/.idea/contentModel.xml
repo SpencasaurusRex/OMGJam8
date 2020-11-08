@@ -21,11 +21,13 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AnimateSound.cs" t="Include" />
+          <e p="CustomEnemy.cs" t="Include" />
           <e p="DeathZone.cs" t="Include" />
           <e p="Door.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="LightIntensityFluctuate.cs" t="Include" />
+          <e p="MovingPlatform.cs" t="Include" />
           <e p="OneShotSound.cs" t="Include" />
           <e p="Platform.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />

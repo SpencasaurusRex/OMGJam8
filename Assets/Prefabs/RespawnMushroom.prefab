@@ -101,6 +101,7 @@ MonoBehaviour:
   WaitTime: 1
   PopSound: {fileID: 4402314574776852207, guid: 058842ccd209f9248b88532ce912c0dd, type: 3}
   MarkSound: {fileID: -2836043342251072197, guid: da4e7f2ce9c324643be2a0eaf5b35143, type: 3}
+  Direction: 1
 --- !u!61 &7670876350537210620
 BoxCollider2D:
   m_ObjectHideFlags: 0

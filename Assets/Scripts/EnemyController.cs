@@ -37,12 +37,22 @@ public class EnemyController : MonoBehaviour
         groundMask = LayerMask.GetMask("Ground");
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        GameController.OnFadeoutComplete += _ => Respawn();
+        GameController.OnFadeoutComplete += FadeOut;
         coll = GetComponent<Collider2D>();
         initialSpeed = Speed;
         sr = GetComponent<SpriteRenderer>();
     }
-    
+
+    void FadeOut(GameController.FadeContext context)
+    {
+        Respawn();
+    }
+
+    void OnDestroy()
+    {
+        GameController.OnFadeoutComplete -= FadeOut;
+    }
+
     void Update()
     {
         rb.velocity = new Vector2(Speed, rb.velocity.y);
@@ -70,6 +80,11 @@ public class EnemyController : MonoBehaviour
         Speed = 0;
         dead = true;
         fadeTween = sr.DOFade(0, 1f).SetEase(Ease.InCubic);
+        
+        // Disable the easter egg if you kill the friend :(
+        var custom = GetComponentInChildren<CustomEnemy>();
+        if (custom != null)
+            custom.Kill();
         
         Instantiate(DieSound, transform);
     }

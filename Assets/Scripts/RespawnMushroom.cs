@@ -7,6 +7,7 @@ public class RespawnMushroom : MonoBehaviour
     public OneShotSound PopSound;
     public OneShotSound MarkSound;
     
+    public float Direction;
     float timeWaited;
 
     public void Respawn()
@@ -17,7 +18,7 @@ public class RespawnMushroom : MonoBehaviour
 
     public void Pop()
     {
-        Instantiate(PopSound, transform);
+        Instantiate(PopSound, gameObject.transform);
     }
 
     public void Mark()

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,11 @@ public class PlayerController : MonoBehaviour
     public Vector2 RespawnVelocity;
     public float RespawnControlLockTime = 0.5f;
     public Transform Target;
+    public OneShotSound JumpSound;
+    public OneShotSound LandingSound;
+    public float Acceleration = 10;
+    
+    public float MaxSpeed = 5;
     
     bool alive = true;
     
@@ -31,6 +37,7 @@ public class PlayerController : MonoBehaviour
     bool tryJump;
     Vector2 targetVel;
     
+    bool touchingPlatform;
     bool controlsLocked;
     
     enum AnimState
@@ -49,14 +56,21 @@ public class PlayerController : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         
         detectionResults = new Collider2D[4];
-        groundMask = LayerMask.GetMask("Ground");
+        groundMask = LayerMask.GetMask("Ground", "Platform");
         mushroomMask = LayerMask.GetMask("Mushroom");
         gravity = rb.gravityScale;
         
         GameController.OnFadeoutComplete += FadeOutComplete;
-        GameController.OnFadeIncomplete += FadeInComplete;
-        
+        GameController.OnFadeInComplete += FadeInComplete;
+
+        transform.position = LastMushroom.transform.position;
         LastMushroom.Respawn();
+    }
+
+    void OnDestroy()
+    {
+        GameController.OnFadeoutComplete -= FadeOutComplete;
+        GameController.OnFadeInComplete -= FadeInComplete;
     }
 
     void FadeOutComplete(GameController.FadeContext context)
@@ -86,7 +100,9 @@ public class PlayerController : MonoBehaviour
         controlsLocked = true;
             
         // Apply force to player
-        targetVel = rb.velocity = RespawnVelocity;
+        targetVel = RespawnVelocity;
+        targetVel.x *= LastMushroom.Direction;
+        rb.velocity = targetVel;
         StartCoroutine(UnlockControls());
     }
 
@@ -102,7 +118,10 @@ public class PlayerController : MonoBehaviour
 
         if (!controlsLocked)
         {
-            targetVel.x = Input.GetAxisRaw("Horizontal") * Speed;
+            targetVel.x = 0;
+            targetVel.x += Input.GetKey(KeyCode.A) ? -1 : 0;
+            targetVel.x += Input.GetKey(KeyCode.D) ? 1 : 0;
+            targetVel.x *= MaxSpeed;
             
             if (Input.GetKey(KeyCode.Space))
             {
@@ -120,7 +139,7 @@ public class PlayerController : MonoBehaviour
         if (rb.velocity.x > 0) transform.localScale = new Vector3(1, 1, 1);
         if (rb.velocity.x < 0) transform.localScale = new Vector3(-1, 1, 1);
         
-        if (rb.velocity.y < -0.05f)
+        if (rb.velocity.y < -0.05f && !touchingPlatform)
         {
             state = AnimState.Falling;
         }
@@ -164,18 +183,27 @@ public class PlayerController : MonoBehaviour
             }
         }
         
+        bool lastGrounded = grounded;
         grounded = Physics2D.OverlapBoxNonAlloc(Feet.position, Vector2.one * 0.05f, 0, detectionResults, groundMask) > 0;
         if (grounded)
         {
+            touchingPlatform = detectionResults[0].gameObject.layer == LayerMask.NameToLayer("Platform");
             lastTouchingGround = 0;
         }
         else
         {
             lastTouchingGround += Time.fixedDeltaTime;
         }
+
+        if (grounded && !lastGrounded)
+        {
+            Instantiate(LandingSound, transform);
+        }
         
         if (lastTouchingGround <= CoyoteTime && tryJump)
         {
+            Instantiate(JumpSound, transform);
+            
             lastTouchingGround += CoyoteTime + 0.01f; // Disqualify us from jumping next frame
             targetVel.y = JumpVelocity;
         }
@@ -190,6 +218,15 @@ public class PlayerController : MonoBehaviour
         }
         
         tryJump = false;
+
+        if (Mathf.Abs(targetVel.x - rb.velocity.x) > Acceleration * Time.fixedDeltaTime)
+        {
+            float deltaDir = Mathf.Sign(targetVel.x - rb.velocity.x);
+
+            float accelBonus = deltaDir == Mathf.Sign(-rb.velocity.x) ? 2f : 1;
+            float targetXVel = Mathf.Clamp(deltaDir * Acceleration * accelBonus * Time.fixedDeltaTime + rb.velocity.x, -MaxSpeed, MaxSpeed);
+            targetVel.x = targetXVel;    
+        }
         
         rb.velocity = targetVel;
     }
@@ -197,6 +234,7 @@ public class PlayerController : MonoBehaviour
     public void Bounce(float amount)
     {
         rb.velocity = new Vector2(rb.velocity.x, amount);
+        lastTouchingGround = 0;
     }
 
     public void Die(bool animate)
@@ -225,6 +263,14 @@ public class PlayerController : MonoBehaviour
     }
 
     Door lastDoor;
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Damage"))
+        {
+            Die(true);
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {

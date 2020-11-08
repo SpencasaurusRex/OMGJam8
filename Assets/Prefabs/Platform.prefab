@@ -300,6 +300,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Collapses: 1
   CollapseTime: 0.8
+  JitterAmount: 0.025
+  JitterSpeed: 100
   Size: 2
   PlatformChildPrefab: {fileID: 4153075556162414288, guid: 1db27a9a039a5384e9b64f94a32376f5, type: 3}
   Sprites:
