@@ -6,7 +6,8 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     
     public Material CircleFadeMaterial;
-
+    public bool PlayMusic;
+    
     float size;
     public float MaxSize = 2.5f;
     public float FadeTime = 0.5f;
@@ -38,6 +39,19 @@ public class GameController : MonoBehaviour
         StartFadeIn(FadeContext.LevelChange);
         Screen.fullScreen = false;
         //Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+
+        if (PlayMusic)
+        {
+            var music = GameObject.Find("Music");
+            if (music)
+            {
+                var audio = music.GetComponent<AudioSource>();
+                if (!audio.isPlaying)
+                {
+                    audio.Play();
+                }
+            }
+        }
     }
 
     void Update()

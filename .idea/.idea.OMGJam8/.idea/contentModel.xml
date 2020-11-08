@@ -23,8 +23,10 @@
           <e p="AnimateSound.cs" t="Include" />
           <e p="CustomEnemy.cs" t="Include" />
           <e p="DeathZone.cs" t="Include" />
+          <e p="DontDestroy.cs" t="Include" />
           <e p="Door.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
+          <e p="FadeIn.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="LightIntensityFluctuate.cs" t="Include" />
           <e p="MovingPlatform.cs" t="Include" />

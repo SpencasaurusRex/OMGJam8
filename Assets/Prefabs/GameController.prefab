@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CircleFadeMaterial: {fileID: 2100000, guid: cd5f9902a78bc5b4b98a4e9f96adb19a, type: 2}
+  Music: {fileID: 0}
+  PlayMusic: 0
   MaxSize: 2.5
   FadeTime: 0.5

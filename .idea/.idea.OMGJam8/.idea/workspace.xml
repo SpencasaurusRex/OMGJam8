@@ -20,53 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e34a3ba-f593-43a2-a98a-3a111dc060e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PulleyPlatform.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PulleyPlatform.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sounds/JumpSound.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sounds/JumpSound.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sounds/LandingSound.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sounds/LandingSound.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomEnemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/footstep.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/footstep.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/footstep_mod.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/footstep_mod.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/landing_mod.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/landing_mod.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DontDestroy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DontDestroy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FadeIn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FadeIn.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMGJam8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/ARCADECLASSIC SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/ARCADECLASSIC SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RespawnMushroom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RespawnMushroom.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sign.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameController.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/monochrome_tilemap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/monochrome_tilemap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_24.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_24.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_26.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_26.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tilemap/Tiles/monochrome_tilemap_5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBuild/Build/WebBuild.data" beforeDir="false" afterPath="$PROJECT_DIR$/WebBuild/Build/WebBuild.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBuild/Build/WebBuild.framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebBuild/Build/WebBuild.framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBuild/Build/WebBuild.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/WebBuild/Build/WebBuild.wasm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBuild/WebBuild.zip" beforeDir="false" afterPath="$PROJECT_DIR$/WebBuild/WebBuild.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBuild/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebBuild/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +52,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sign.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DontDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FadeIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" root0="FORCE_HIGHLIGHTING" />
@@ -105,13 +76,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OneShotSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Door.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RespawnMushroom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DontDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FadeIn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -154,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604648536318</updated>
       <workItem from="1604648540283" duration="45480000" />
-      <workItem from="1604760663286" duration="24710000" />
+      <workItem from="1604760663286" duration="27679000" />
     </task>
     <servers />
   </component>
@@ -254,10 +227,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2505" height="155" key="GridCell.Tab.3.right/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604847875944" />
-    <state width="623" height="515" key="SwitcherDM" timestamp="1604848301362">
+    <state width="623" height="515" key="SwitcherDM" timestamp="1604852371464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="623" height="515" key="SwitcherDM/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604848301362" />
+    <state width="623" height="515" key="SwitcherDM/-2560.9.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604852371464" />
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1604848555344">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

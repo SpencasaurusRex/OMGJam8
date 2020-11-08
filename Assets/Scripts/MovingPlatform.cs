@@ -37,8 +37,10 @@ public class MovingPlatform : MonoBehaviour
             xTween = XTween(true).OnComplete(() => StartCoroutine(LoopX(false)));
         }
 
-        if (Y) 
+        if (Y)
+        {
             yTween = YTween(true).OnComplete(() => StartCoroutine(LoopY(false)));
+        }
     }
 
     IEnumerator LoopX(bool forward)
