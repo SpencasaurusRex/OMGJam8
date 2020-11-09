@@ -53,15 +53,7 @@ public class GameController : MonoBehaviour
             }
         }
     }
-
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-    }
-
+    
     public void StartFadeOut(FadeContext context)
     {
         fadeoutTime = 0;
